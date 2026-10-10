@@ -1,0 +1,9 @@
+{
+  "project": "seltox",
+  "kind": "clean",
+  "error_type": "none",
+  "outside_diff": false,
+  "notes": "SHAP analysis of a model trained on our lab data only; the external test is not touched. Nothing to report.",
+  "expected": [],
+  "max_extra_findings": 0
+}

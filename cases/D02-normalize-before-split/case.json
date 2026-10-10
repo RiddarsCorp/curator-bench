@@ -1,0 +1,16 @@
+{
+  "project": "des-density",
+  "kind": "error",
+  "error_type": "preprocessing-before-split",
+  "outside_diff": true,
+  "notes": "mining_descriptors.py now MinMax-normalizes all numeric columns over the whole dataset before saving. Only notebooks/density_ml.ipynb shows that the split by system happens later, on the already normalized file; RESEARCH.md requires the scaler to be fitted on the training part.",
+  "expected": [
+    {
+      "area": ["methodology", "data"],
+      "severity": ["critical", "important"],
+      "files": ["mining_descriptors.py"],
+      "keywords": ["нормализ", "MinMaxScaler", "масштаб", "до разбиения", "весь датасет", "всех данных"]
+    }
+  ],
+  "max_extra_findings": 1
+}

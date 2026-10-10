@@ -1,0 +1,9 @@
+{
+  "project": "solubility",
+  "kind": "clean",
+  "error_type": "none",
+  "outside_diff": false,
+  "notes": "Looks leak-prone but is correct: boosting is tuned by GroupKFold over scaffolds on the training part only, scaling sits inside the Pipeline, and the holdout is evaluated once with the chosen parameters, as PLAN.md stage 2 says.",
+  "expected": [],
+  "max_extra_findings": 0
+}

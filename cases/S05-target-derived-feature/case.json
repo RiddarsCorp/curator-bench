@@ -1,0 +1,16 @@
+{
+  "project": "solubility",
+  "kind": "error",
+  "error_type": "target-leakage",
+  "outside_diff": true,
+  "notes": "A numeric code of solubility_class is added to FEATURES. Only data/README.md says solubility_class is computed from log_solubility (the target).",
+  "expected": [
+    {
+      "area": ["methodology", "data"],
+      "severity": ["critical"],
+      "files": ["src/config.py", "src/data.py"],
+      "keywords": ["solubility_class", "целев", "вычислен", "утечк", "log_solubility"]
+    }
+  ],
+  "max_extra_findings": 1
+}

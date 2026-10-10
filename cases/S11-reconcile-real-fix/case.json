@@ -1,0 +1,24 @@
+{
+  "project": "solubility",
+  "kind": "reconcile",
+  "error_type": "real-fix",
+  "outside_diff": false,
+  "pr_number": 7,
+  "notes": "Before the PR the boosting cross-validation shuffles KFold without a seed (finding 102 from PR #5). The PR passes random_state=SEED. Finding 102 must be closed; nothing new to report.",
+  "open_findings": [
+    {
+      "id": 102,
+      "prNumber": 5,
+      "area": "reproducibility",
+      "severity": "important",
+      "title": "Кросс-валидация бустинга перемешивает данные без фиксированного сида",
+      "locations": [{ "kind": "file", "target": "src/train.py", "detail": "27" }],
+      "verify": "у KFold в кросс-валидации бустинга задан random_state (SEED)",
+      "status": "open"
+    }
+  ],
+  "student_replies": [],
+  "expected": [],
+  "expected_decisions": [{ "prior_id": 102, "status": ["closed"] }],
+  "max_extra_findings": 0
+}

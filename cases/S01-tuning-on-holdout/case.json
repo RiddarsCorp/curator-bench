@@ -1,0 +1,16 @@
+{
+  "project": "solubility",
+  "kind": "error",
+  "error_type": "tuning-on-holdout",
+  "outside_diff": true,
+  "notes": "The diff names the second part of scaffold_split 'valid' and tunes on it. Only src/splits.py (docstring) and RESEARCH.md say it is the final holdout.",
+  "expected": [
+    {
+      "area": ["methodology"],
+      "severity": ["critical", "important"],
+      "files": ["src/train.py"],
+      "keywords": ["отложенн", "тестов", "holdout", "подбор.*(valid|валидац)", "утечк"]
+    }
+  ],
+  "max_extra_findings": 1
+}

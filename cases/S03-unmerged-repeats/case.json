@@ -1,0 +1,16 @@
+{
+  "project": "solubility",
+  "kind": "error",
+  "error_type": "duplicates",
+  "outside_diff": true,
+  "notes": "PubChem rows are appended after merge_repeats, so ~315 molecules measured in both sources appear twice. That the sources overlap is visible only in the data (shared canonical_smiles) and data/README.md; RESEARCH.md requires repeats to be averaged.",
+  "expected": [
+    {
+      "area": ["data", "methodology"],
+      "severity": ["critical", "important"],
+      "files": ["src/data.py"],
+      "keywords": ["повтор", "дубл", "дважды", "merge_repeats", "совпада"]
+    }
+  ],
+  "max_extra_findings": 1
+}

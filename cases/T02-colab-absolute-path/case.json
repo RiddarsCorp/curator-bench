@@ -1,0 +1,16 @@
+{
+  "project": "seltox",
+  "kind": "error",
+  "error_type": "reproducibility",
+  "outside_diff": false,
+  "notes": "The data directory is switched to an absolute Google Colab path; the project no longer runs from the repository as README.md describes. A pattern seen in real student repositories.",
+  "expected": [
+    {
+      "area": ["reproducibility"],
+      "severity": ["important", "critical"],
+      "files": ["Data and Preprocessing/preprocessing.py"],
+      "keywords": ["/content/drive", "абсолютн", "Colab", "воспроизвод", "путь"]
+    }
+  ],
+  "max_extra_findings": 1
+}

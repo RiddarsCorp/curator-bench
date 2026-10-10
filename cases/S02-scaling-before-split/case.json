@@ -1,0 +1,16 @@
+{
+  "project": "solubility",
+  "kind": "error",
+  "error_type": "preprocessing-before-split",
+  "outside_diff": true,
+  "notes": "train.py now calls scale_features on the whole dataset before scaffold_split. Only src/features.py shows that the scaler is fitted on the frame passed in, i.e. on train and holdout together.",
+  "expected": [
+    {
+      "area": ["methodology"],
+      "severity": ["critical", "important"],
+      "files": ["src/train.py", "src/features.py"],
+      "keywords": ["масштаб", "стандартиз", "scale_features", "StandardScaler", "до разбиения"]
+    }
+  ],
+  "max_extra_findings": 1
+}

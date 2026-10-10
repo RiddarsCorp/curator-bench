@@ -1,0 +1,9 @@
+{
+  "project": "des-density",
+  "kind": "clean",
+  "error_type": "none",
+  "outside_diff": false,
+  "notes": "EDA cells over the 200k-row table (18 MB). Nothing to report; checks that the agent inspects the table through table_info and does not choke on it.",
+  "expected": [],
+  "max_extra_findings": 0
+}

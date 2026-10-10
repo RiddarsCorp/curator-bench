@@ -1,0 +1,16 @@
+{
+  "project": "solubility",
+  "kind": "error",
+  "error_type": "wrong-split-type",
+  "outside_diff": false,
+  "notes": "train.py switches to random_split. RESEARCH.md declares a scaffold split as the core of the question; src/splits.py documents random_split as debugging only.",
+  "expected": [
+    {
+      "area": ["methodology", "plan"],
+      "severity": ["critical", "important"],
+      "files": ["src/train.py"],
+      "keywords": ["каркас", "scaffold", "случайн"]
+    }
+  ],
+  "max_extra_findings": 1
+}

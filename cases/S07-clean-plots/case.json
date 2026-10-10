@@ -1,0 +1,9 @@
+{
+  "project": "solubility",
+  "kind": "clean",
+  "error_type": "none",
+  "outside_diff": false,
+  "notes": "A residual plot built from cross-validated predictions on the training part. Nothing to report.",
+  "expected": [],
+  "max_extra_findings": 0
+}

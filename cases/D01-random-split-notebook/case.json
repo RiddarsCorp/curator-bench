@@ -1,0 +1,16 @@
+{
+  "project": "des-density",
+  "kind": "error",
+  "error_type": "wrong-split-type",
+  "outside_diff": false,
+  "notes": "The notebook replaces GroupShuffleSplit by system with a row-level train_test_split. Measurements of one system at different temperatures land on both sides; RESEARCH.md says the split must be by system. The jump of R² to 0.997 is the symptom.",
+  "expected": [
+    {
+      "area": ["methodology"],
+      "severity": ["critical"],
+      "files": ["notebooks/density_ml.ipynb"],
+      "keywords": ["систем", "GroupShuffleSplit", "group", "случайн", "train_test_split"]
+    }
+  ],
+  "max_extra_findings": 1
+}

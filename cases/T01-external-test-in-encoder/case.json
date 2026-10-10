@@ -1,0 +1,16 @@
+{
+  "project": "seltox",
+  "kind": "error",
+  "error_type": "preprocessing-before-split",
+  "outside_diff": false,
+  "notes": "The final evaluation fits the FeaturePipeline (encoder and scaler) on train + external test 'so that categories match'. RESEARCH.md forbids using the external test for feature preparation; model/pipeline.py already handles unknown categories.",
+  "expected": [
+    {
+      "area": ["methodology"],
+      "severity": ["critical", "important"],
+      "files": ["train_model.py"],
+      "keywords": ["внешн", "тест", "кодировщ", "encoder", "concat", "масштаб"]
+    }
+  ],
+  "max_extra_findings": 1
+}

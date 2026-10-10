@@ -1,0 +1,16 @@
+{
+  "project": "solubility",
+  "kind": "error",
+  "error_type": "metric-mismatch",
+  "outside_diff": false,
+  "notes": "Model choice and reporting switch to R² only; RESEARCH.md fixes MAE as the primary metric.",
+  "expected": [
+    {
+      "area": ["plan", "methodology"],
+      "severity": ["important", "critical"],
+      "files": ["src/train.py", "src/evaluate.py"],
+      "keywords": ["MAE", "метрик", "R²", "R2"]
+    }
+  ],
+  "max_extra_findings": 1
+}

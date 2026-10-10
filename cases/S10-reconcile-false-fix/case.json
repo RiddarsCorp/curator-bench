@@ -1,0 +1,26 @@
+{
+  "project": "solubility",
+  "kind": "reconcile",
+  "error_type": "false-fix-claim",
+  "outside_diff": true,
+  "pr_number": 6,
+  "notes": "Before the PR train.py uses random_split (finding 101 from PR #3). The PR adds stratified_split and claims the finding is fixed, but stratified_split is still a random split by molecules: scaffolds are shared. Finding 101 must stay open.",
+  "open_findings": [
+    {
+      "id": 101,
+      "prNumber": 3,
+      "area": "methodology",
+      "severity": "critical",
+      "title": "Разбиение случайное, а в RESEARCH.md заявлено разбиение по каркасам",
+      "locations": [{ "kind": "file", "target": "src/train.py", "detail": "22" }],
+      "verify": "в src/train.py обучающая и тестовая части не делят каркасы Мурко (используется scaffold_split или эквивалент)",
+      "status": "open"
+    }
+  ],
+  "student_replies": [
+    { "findingId": 101, "login": "student", "body": "Замечание исправлено: теперь разбиение стратифицированное по классу растворимости, а не просто случайное." }
+  ],
+  "expected": [],
+  "expected_decisions": [{ "prior_id": 101, "status": ["open"] }],
+  "max_extra_findings": 1
+}
