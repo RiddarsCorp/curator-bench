@@ -4,7 +4,7 @@
   "error_type": "real-fix",
   "outside_diff": false,
   "pr_number": 7,
-  "notes": "Before the PR the boosting cross-validation shuffles KFold without a seed (finding 102 from PR #5). The PR passes random_state=SEED. Finding 102 must be closed; nothing new to report.",
+  "notes": "Before the PR the boosting cross-validation shuffles KFold without a seed (finding 102 from PR #5). The PR passes random_state=SEED. Finding 102 must be closed; nothing new to report. Side defect left in the case: the boosting cross-validation uses a shuffled KFold, not scaffold groups; reporting it is allowed.",
   "open_findings": [
     {
       "id": 102,
@@ -12,13 +12,45 @@
       "area": "reproducibility",
       "severity": "important",
       "title": "Кросс-валидация бустинга перемешивает данные без фиксированного сида",
-      "locations": [{ "kind": "file", "target": "src/train.py", "detail": "27" }],
+      "locations": [
+        {
+          "kind": "file",
+          "target": "src/train.py",
+          "detail": "27"
+        }
+      ],
       "verify": "у KFold в кросс-валидации бустинга задан random_state (SEED)",
       "status": "open"
     }
   ],
   "student_replies": [],
   "expected": [],
-  "expected_decisions": [{ "prior_id": 102, "status": ["closed"] }],
+  "expected_decisions": [
+    {
+      "prior_id": 102,
+      "status": [
+        "closed"
+      ]
+    }
+  ],
+  "allowed": [
+    {
+      "area": [
+        "methodology"
+      ],
+      "severity": [
+        "critical",
+        "important"
+      ],
+      "files": [
+        "src/train.py"
+      ],
+      "keywords": [
+        "KFold",
+        "каркас",
+        "scaffold"
+      ]
+    }
+  ],
   "max_extra_findings": 0
 }
