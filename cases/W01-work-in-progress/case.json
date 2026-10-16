@@ -1,0 +1,28 @@
+{
+  "project": "solubility",
+  "kind": "clean",
+  "error_type": "none",
+  "outside_diff": false,
+  "notes": "Work in progress: RESEARCH.md describes Ridge vs gradient boosting and a single final holdout evaluation; train.py has only Ridge CV and creates the holdout without evaluating it yet; PLAN.md is still the template. Nothing done is wrong, so unfinished work must not be reported. A live run on 2026-10-16 raised both as critical. The solubility_class aggregation in src/data.py is a real side defect; reporting it is allowed.",
+  "expected": [],
+  "allowed": [
+    {
+      "area": [
+        "data",
+        "code"
+      ],
+      "severity": [
+        "info",
+        "important"
+      ],
+      "files": [
+        "src/data.py"
+      ],
+      "keywords": [
+        "solubility_class",
+        "класс"
+      ]
+    }
+  ],
+  "max_extra_findings": 0
+}
